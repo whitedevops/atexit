@@ -1,4 +1,12 @@
-// Package atexit registers a function to be called at normal process termination (by ^C = SIGINT = "kill -2").
+/*
+Package atexit registers a function to be called at normal process termination (by ^C = SIGINT = "kill -2").
+
+Installation
+
+In the terminal:
+
+	$ go get github.com/whitedevops/atexit
+*/
 package atexit
 
 import (
@@ -9,7 +17,7 @@ import (
 var s chan os.Signal
 
 // Use registers the atexit function.
-// It can only be called a single time.
+// It can be called only once per program.
 func Use(f func()) {
 	if s != nil {
 		panic("atexit can only be called a single time")

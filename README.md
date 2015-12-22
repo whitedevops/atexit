@@ -1,6 +1,6 @@
-# Atexit
+# AtExit
 
-Atexit registers a function to be called at normal process termination (by `^C` = `SIGINT` = `kill -2`).
+AtExit registers a function to be called at normal process termination (by `^C` = `SIGINT` = `kill -2`).
 
 ## Installation
 
