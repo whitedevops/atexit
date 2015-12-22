@@ -6,6 +6,22 @@ Installation
 In the terminal:
 
 	$ go get github.com/whitedevops/atexit
+
+Usage
+
+Example:
+
+	package main
+
+	import (
+		"github.com/whitedevops/atexit"
+	)
+
+	func main() {
+		atexit.Use(func() {
+			// Do something before exit…
+		})
+	}
 */
 package atexit
 
