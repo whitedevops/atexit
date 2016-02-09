@@ -1,28 +1,4 @@
-/*
-Package atexit registers a function to be called at normal process termination (by ^C = SIGINT = "kill -2").
-
-Installation
-
-In the terminal:
-
-	$ go get github.com/whitedevops/atexit
-
-Usage
-
-Example:
-
-	package main
-
-	import (
-		"github.com/whitedevops/atexit"
-	)
-
-	func main() {
-		atexit.Use(func() {
-			// Do something before exit…
-		})
-	}
-*/
+// Package atexit provides a way to set a function that will be called at normal process termination (by ^C = SIGINT = "kill -2").
 package atexit
 
 import (
